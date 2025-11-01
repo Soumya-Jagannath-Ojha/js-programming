@@ -403,6 +403,20 @@
 // * * * * 0
 // * * * * *
 
+// const n=5
+// for(let i=1;i<=n;i++){
+//     row=""
+//     for(let j=1;j<=n;j++){
+//         if( i>=j)
+//            if(j<=i)
+//             {
+//             row+= "* "
+//         }else{
+//             row+="0 "
+//         }
+//     }
+//     console.log(row)
+// }
 
 //! 18
 
@@ -412,6 +426,20 @@
 // * * 0 0 0
 // * 0 0 0 0
 
+// const n=5
+// for(let i=1;i<=n;i++){
+//     row=""
+//     for(let j=1;j<=n;j++){
+//         if( i+j<=n+1){
+//             row+= "* "
+//         }else{
+//             row+="0 "
+//         }
+//     }
+//     console.log(row)
+// }
+
+
 //! 19 
 
 // 0 0 0 0 *
@@ -419,6 +447,21 @@
 // 0 0 * * *
 // 0 * * * *
 // * * * * *
+
+
+// const n=5
+// for(let i=1;i<=n;i++){
+//     row=""
+//     for(let j=1;j<=n;j++){
+//         if(i+j>=n+1){
+//             row+= "* "
+//         }else{
+//             row+="0 "
+//         }
+//     }
+//     console.log(row)
+// }
+
 
 //! 20
 
@@ -428,6 +471,19 @@
 // 0 0 0 * *
 // 0 0 0 0 *
 
+// const n=5
+// for(let i=1;i<=n;i++){
+//     row=""
+//     for(let j=1;j<=n;j++){
+//         if(i<=j){
+//             row+= "* "
+//         }else{
+//             row+="0 "
+//         }
+//     }
+//     console.log(row)
+// }
+
 
 //! 21 
 // 0 0 * 0 0 
@@ -435,3 +491,19 @@
 // * * * * * 
 // 0 * * * 0 
 // 0 0 * 0 0 
+
+// const n=5
+// for(let i=1;i<=n;i++){
+//     row=""
+//     for(let j=1;j<=n;j++){
+//         if(j==Math.round(n/2) || i==Math.round(n/2) || i %2 ==0 && j % 2 ==0 ){
+//             row+= " * "
+//         }
+
+//         else{
+//             row+=" 0 "
+//         }
+//     }
+//     console.log(row)
+// }
+
