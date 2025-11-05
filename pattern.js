@@ -546,14 +546,12 @@
 //     console.log(row)
 // }
 
-
 //! 24
 //         *
 //       * *
 //     * * *
 //   * * * *
 // * * * * *
-
 
 // const n = 5;
 // for (let i = 1; i <= n; i++) {
@@ -577,7 +575,6 @@
 //  1  1  1  1  *  0  0  0  0
 //  1  1  1  1  *  0  0  0  0
 
-
 // const n = 5;
 // for (let i = 1; i <= n; i++) {
 //   row = "";
@@ -593,8 +590,7 @@
 //   console.log(row);
 // }
 
-
-//! Task - Day 4 
+//! Task - Day 4
 
 //! 26
 // *
@@ -614,7 +610,7 @@
 //         row+="* "
 //     }
 //     console.log(row)
-   
+
 // }
 // for(let i=n-1; i>=1;i--){
 //     let row = "";
@@ -622,11 +618,19 @@
 //         row+="* "
 //     }
 //     console.log(row)
-   
+
 // }
 
- 
-
+// const n=5;
+//  for(let i=1; i<=2*n; i++){
+//     let row = "";
+//     for(let j=1; j<=n; j++){
+//         if((i>=j) && (i+j<=2*n)){
+//             row+="* "
+//         }
+//     }
+//     console.log(row)
+//  }
 
 //! 27
 //         *
@@ -639,7 +643,8 @@
 //       * *
 //         *
 
-
+//? i>=j && i+j<=2*n 
+//? (i>=j && i<=n) || (i>n && i+j<2*n+1) 
 // const n =5;
 // for(let i=1; i<=n;i++){
 //     let row = "";
@@ -651,7 +656,7 @@
 //         }
 //     }
 //     console.log(row)
-   
+
 // }
 // for(let i=n-1; i>=1;i--){
 //     let row = "";
@@ -663,9 +668,21 @@
 //         }
 //     }
 //     console.log(row)
-   
+
 // }
 
+//? (i-j <= n-1) && (i+j >= n+1)
+//? (i<n && i+j> n+1) || (i>n && i+j>n)
+// const n = 5;
+// for (let i = 1; i <= 2 * n; i++) {
+//   let row = "";
+//   for (let j = 1; j <= n; j++) {
+//     if (i - j <= n - 1 && i + j >= n + 1) {
+//       row += "* ";
+//     }
+//   }
+//   console.log(row);
+// }
 
 //! 28
 
@@ -675,31 +692,21 @@
 //   * * * * * * * *
 // * * * * * * * * * *
 
-const n=5;
 
+
+const n=5;
+const mid = Math.round(n/2);
 for(let i=1; i<=n; i++){
     let row ="";
     for(let j=1; j<=n; j++){
-         if((i+j) > 5){
+         if( (i===mid || j === mid)){
             row+="* "
         }else{
             row+="  "
         }
     }
     console.log(row)
-    
 }
-// for(let i=n; i>=1; i--){
-//     let row ="";
-//     for(let j=1; j<=n; j++){
-//          if((i+j)%2 === 0){
-//             row+="* "
-//         }else{
-//             row+="  "
-//         }
-//     }
-//     console.log(row)
-// }
 
 
 //! 29
