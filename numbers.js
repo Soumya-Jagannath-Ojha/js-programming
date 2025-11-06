@@ -137,7 +137,111 @@ const checkPrime =(num)=>{
     }
 }
 
+//! Optimize prime number
+
+
 
 //! Task 
 //! WAJP to find all the prime numbers from 1 to 100 
 //! WAJP to find only 3 digits prime numbers  
+
+
+//! WAJP to find all the factors of a given number
+// input1:- 10 
+// output1:- [1,2,5,10] 
+
+// input2: 11
+// output2: [1,11]
+
+// input3: 0
+// output: []
+
+
+
+// const factorofanumber = (n) =>{
+//     if(n === 0){
+//         return [];
+//     }
+//     let fact = [1];
+//     for(let i=2; i<=Math.round(n/2); i++){
+//         if(n%i === 0){
+//             fact.push(i);
+//         }
+//     }
+//     fact.push(n);
+//     return fact;
+// }
+// console.log(factorofanumber(11))
+
+
+
+
+//! WAJP  to return the sum of the factors of a given number
+// input1:- 10 
+// output1:- [1,2,5,10] = 18 
+
+// const sumoffactfanumber = (n) =>{
+//     if(n === 0){
+//         return 0;
+//     }
+//     let sum = 1;
+//     for(let i=2; i<=Math.round(n/2); i++){
+//         if(n%i === 0){
+//             sum+=i;
+//         }
+//     }
+//     return sum+n;
+// }
+
+
+
+// console.log(sumoffactfanumber(10))
+
+
+
+//! Problems on indivisual numbers
+
+//! WAJP to print how many digits  is this number is
+
+const numofdigits = (n)=>{
+
+    if(n<10 && n>0){
+        return 1;
+    }
+    let digits = 0;
+    while(n>0){
+        digits++;
+        // n/=10;
+        n = Math.floor(n/10)
+    }
+    return digits;
+}
+
+// console.log(numofdigits(12345))
+
+//! WAJP  sum of the digits of a given number
+
+
+const numsumofdigits = (n)=>{
+
+    if(n<10 && n>0){
+        return 1;
+    }
+    let digits = 0;
+    let sum=0;
+    while(n>0){
+        digits++;
+        sum+= n%10;
+        // n/=10;
+        n = Math.floor(n/10)
+    }
+    return sum;
+}
+
+// console.log(numsumofdigits(1234))
+
+
+//! Task 
+//! WAJP to triverse a number with out using reverse method 
+//! WAJP to check a given number is a palindrom or not with out using in built methods 
+//! WAJP to print the sum of square of each digits 
