@@ -242,6 +242,119 @@ const numsumofdigits = (n)=>{
 
 
 //! Task 
-//! WAJP to triverse a number with out using reverse method 
+//! WAJP to traverse a number with out using reverse method 
+// const traverseNumber = (n) =>{
+//     if(n>=0 && n<10){
+//         return n;
+//     }
+//     let str = "";
+//     while(n>0){
+//         let value =  Math.floor(n%10);
+//         str +=value;
+//         n = Math.floor(n/10)
+
+//     }
+//     return str;
+// }
+// console.log(traverseNumber(12));
+
+//? OR
+
+// const traverseNumber = (n)=>{
+//     if(n>=0 && n<10){
+//         return n;
+//     }
+
+//     let reverse = 0;
+
+//     while(n > 0){
+//         reverse = reverse * 10 + (n%10);
+//         n = Math.floor(n/10);
+//     }
+//     return reverse;
+// }
+// console.log(traverseNumber(34));
 //! WAJP to check a given number is a palindrom or not with out using in built methods 
+
+// const palindrom = (n)=>{
+//     let dummy = n;
+//     if(n>=0 && n<10){
+//         return n;
+//     }
+
+//     let reverse = 0;
+
+//     while(n > 0){
+//         reverse = reverse * 10 + (n%10);
+//         n = Math.floor(n/10);
+//     }
+//     if(dummy === reverse){
+//         return true;
+//     }else{
+//         return false;
+//     }
+    
+// }
+// console.log(palindrom(100));
+
 //! WAJP to print the sum of square of each digits 
+
+// const sumofsquare = (n)=>{
+
+//     if(n>=0 && n<10){
+//         return n*n;
+//     }
+//     let ans = 0;
+//     while(n>0){
+//         let v = n%10;
+//         ans += v ** 2;
+//         n = Math.floor(n/10);
+//     }
+//     return ans;
+// }
+
+// console.log(sumofsquare(12))
+
+//! WAJP to count how many zeros are present inside a given number
+//! input: 90765200
+//! output: 3   
+
+// let digits=0, count= 0;
+
+// function check(num){
+//     while(num > 0){
+//         digits = num % 10;
+//         if(digits === 0){
+//             count++;
+//         }
+//         num = Math.floor(num/10);
+//     }
+//     console.log(`${count} no of o is present`);
+// }
+// check(12305604)
+
+//! WAJP to find first digit and last digit of a number
+
+const finstfirstandLast= (n) =>{
+    let first = 0, last = 0;
+    if(n>=0 && n<10){
+        first=n;
+        last=n;
+    }
+
+    last = n%10;
+
+    while(n>0){
+        first=n;
+        n = Math.floor(n/10);
+    }
+
+    console.log(`first digit is ${first} last digit is ${last}`)
+}
+
+// finstfirstandLast(1245345638)
+
+//! WAJP extract even digits from a given number 
+//! WAJP extract even digits from a given number 
+//! WAJP to sum first and last digit 
+//! WAJP to get the sum of digits which is present between first and last digit 
